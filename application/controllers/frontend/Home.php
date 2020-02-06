@@ -5,7 +5,8 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('public/home');
+    $data['date'] = date('d.m.Y H:i:s');
+		$this->load->view('test', $data);
 	}
 }
 
